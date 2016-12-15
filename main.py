@@ -3,7 +3,7 @@
 # Created for: ICS3U
 # This program is the first file in a multi-scene game template
 #    This template is meant to be used with the Xcode template,
-#    to make apps for the Apple App Store
+#    to make apps for the App Store.
 #
 # Originally from: Ole Zorn, from the Xcode template
 # for use with https://github.com/omz/PythonistaAppTemplate
