@@ -1,22 +1,44 @@
 # Created by: Mr. Coxall
 # Created on: Sep 2016
 # Created for: ICS3U
-# This scene shows the main menu.
+# This scene shows the help scene.
 
 from scene import *
 import ui
 
+from main_menu_scene import *
 
-class MainMenuScene(Scene):
+
+class HelpScene(Scene):
     def setup(self):
         # this method is called, when user moves to this scene
         
-        # add MT blue background color
+        center_of_screen = self.size/2
+        
+        # add background color
+        self.background = SpriteNode(position = self.size / 2, 
+                                     color = 'blue', 
+                                     parent = self, 
+                                     size = self.size)
+                                     
+        self.start_button = LabelNode(text = 'Design by: Mr.Coxall',
+                                      font=('Helvetica', 20),
+                                      parent = self,
+                                      position = self.size / 2,
+                                      scale = 0.75)
+                                      
         self.background = SpriteNode(position = self.size / 2, 
                                      color = 'white', 
                                      parent = self, 
                                      size = self.size)
-    
+        
+        next_button_position = self.size
+        next_button_position.x = 900
+        next_button_position.y = 150
+        self.next_button = SpriteNode('./sprites/assets/next.png',
+                                       parent = self,
+                                       position = next_button_position)
+        
     def update(self):
         # this method is called, hopefully, 60 times a second
         pass
@@ -31,7 +53,10 @@ class MainMenuScene(Scene):
     
     def touch_ended(self, touch):
         # this method is called, when user releases a finger from the screen
-        pass
+        
+        # if start button is pressed, goto game scene
+        if self.back_button.frame.contains_point(touch.location):
+            self.dismiss_modal_scene()
     
     def did_change_size(self):
         # this method is called, when user changes the orientation of the screen
@@ -47,4 +72,3 @@ class MainMenuScene(Scene):
         # this method is called, when user place app from background 
         # back into use. Reload anything you might need.
         pass
-    

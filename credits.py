@@ -1,38 +1,41 @@
 # Created by: Mr. Coxall
 # Created on: Sep 2016
 # Created for: ICS3U
-# This scene shows a splash screen for 2 seconds,
-#   then transitions to the main menu.
+# This scene shows the help scene.
 
 from scene import *
 import ui
-import time
 
 from main_menu_scene import *
 
 
-class SplashScene(Scene):
+class HelpScene(Scene):
     def setup(self):
         # this method is called, when user moves to this scene
         
-        # create timer, so that after 2 seconds move to next scene
-        self.start_time = time.time()
+        center_of_screen = self.size/2
         
-        # add MT blue background color
+        # add background color
         self.background = SpriteNode(position = self.size / 2, 
-                                     color = (0.61, 0.78, 0.87), 
+                                     color = 'grey', 
                                      parent = self, 
                                      size = self.size)
-        self.school_crest = SpriteNode('./sprites/assets/MT_Crest.jpg',
+                                     
+        self.start_button = LabelNode(text = 'Design by: Margie',
+                                      font=('Euphemia UCAS', 50),
+                                      parent = self,
+                                      position = self.size / 2)
+                                      
+        back_button_position = self.size
+        back_button_position.x = 100
+        back_button_position.y = back_button_position.y - 100
+        self.back_button = SpriteNode('./sprites/assets/back.png',
                                        parent = self,
-                                       position = self.size/2)
-    
+                                       position = back_button_position)
+        
     def update(self):
         # this method is called, hopefully, 60 times a second
-        
-        # after 2 seconds, move to main menu scene
-        if not self.presented_scene and time.time() - self.start_time > 2:
-            self.present_modal_scene(MainMenuScene())
+        pass
     
     def touch_began(self, touch):
         # this method is called, when user touches the screen
@@ -44,7 +47,10 @@ class SplashScene(Scene):
     
     def touch_ended(self, touch):
         # this method is called, when user releases a finger from the screen
-        pass
+        
+        # if start button is pressed, goto game scene
+        if self.back_button.frame.contains_point(touch.location):
+            self.dismiss_modal_scene()
     
     def did_change_size(self):
         # this method is called, when user changes the orientation of the screen
