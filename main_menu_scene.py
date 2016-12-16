@@ -1,32 +1,18 @@
 # Created by: Mr. Coxall
 # Created on: Sep 2016
 # Created for: ICS3U
-# This scene shows the help scene.
+# This scene shows the main menu.
 
 from scene import *
 import ui
-
+from credits import *
 from main_menu_scene import *
 
-
-class HelpScene(Scene):
+class MainMenuScene(Scene):
     def setup(self):
         # this method is called, when user moves to this scene
         
-        center_of_screen = self.size/2
-        
-        # add background color
-        self.background = SpriteNode(position = self.size / 2, 
-                                     color = 'blue', 
-                                     parent = self, 
-                                     size = self.size)
-                                     
-        self.start_button = LabelNode(text = 'Design by: Mr.Coxall',
-                                      font=('Helvetica', 20),
-                                      parent = self,
-                                      position = self.size / 2,
-                                      scale = 0.75)
-                                      
+        # add MT blue background color
         self.background = SpriteNode(position = self.size / 2, 
                                      color = 'white', 
                                      parent = self, 
@@ -38,7 +24,6 @@ class HelpScene(Scene):
         self.next_button = SpriteNode('./sprites/assets/next.png',
                                        parent = self,
                                        position = next_button_position)
-        
     def update(self):
         # this method is called, hopefully, 60 times a second
         pass
@@ -53,10 +38,9 @@ class HelpScene(Scene):
     
     def touch_ended(self, touch):
         # this method is called, when user releases a finger from the screen
-        
-        # if start button is pressed, goto game scene
-        if self.back_button.frame.contains_point(touch.location):
-            self.dismiss_modal_scene()
+        if self.next_button.frame.contains_point(touch.location):
+            self.present_modal_scene(HelpScene())
+            
     
     def did_change_size(self):
         # this method is called, when user changes the orientation of the screen
