@@ -27,12 +27,17 @@ class HelpScene(Scene):
                                       position = self.size / 2,
                                       scale = 0.75)
                                       
-        back_button_position = self.size
-        back_button_position.x = 100
-        back_button_position.y = back_button_position.y - 100
-        self.back_button = SpriteNode('./assets/sprites/back_button.png',
+        self.background = SpriteNode(position = self.size / 2, 
+                                     color = 'white', 
+                                     parent = self, 
+                                     size = self.size)
+        
+        next_button_position = self.size
+        next_button_position.x = 900
+        next_button_position.y = 150
+        self.next_button = SpriteNode('./sprites/assets/next.png',
                                        parent = self,
-                                       position = back_button_position)
+                                       position = next_button_position)
         
     def update(self):
         # this method is called, hopefully, 60 times a second
