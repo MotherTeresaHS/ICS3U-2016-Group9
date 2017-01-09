@@ -1,0 +1,254 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {684, 588}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{107, 162}, {150, 38}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "5BF936E5-52B5-4F0C-810E-91FFC99F575C",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Knowledge",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{107, 209}, {150, 38}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "5BF936E5-52B5-4F0C-810E-91FFC99F575C",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Thinking",
+          "name" : "label1",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{107, 257}, {150, 38}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "5BF936E5-52B5-4F0C-810E-91FFC99F575C",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Application",
+          "name" : "label1",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{107, 303}, {150, 38}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "5BF936E5-52B5-4F0C-810E-91FFC99F575C",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Communication",
+          "name" : "label1",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{323, 162}, {83, 38}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "knowledge_textfield",
+          "frame" : "{{204, 268}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "6EF63F7A-168D-4D85-ACC7-0309D7CECB45",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_size" : 17,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{323, 209}, {83, 38}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 17,
+          "frame" : "{{204, 268}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "6EF63F7A-168D-4D85-ACC7-0309D7CECB45",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "thinking_textfield",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{323, 257}, {83, 38}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 17,
+          "frame" : "{{204, 268}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "6EF63F7A-168D-4D85-ACC7-0309D7CECB45",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "application_textfield",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{323, 303}, {83, 38}}",
+        "class" : "TextField",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 17,
+          "frame" : "{{204, 268}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "uuid" : "6EF63F7A-168D-4D85-ACC7-0309D7CECB45",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "name" : "communication_textfield",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{435, 242}, {80, 38}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "calculate_button_touch_up_inside",
+          "frame" : "{{264, 268}, {80, 32}}",
+          "title" : "Calculate",
+          "uuid" : "EAE8703C-E6B0-4190-BCDE-B91022F1F997",
+          "class" : "Button",
+          "name" : "calculate_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{531, 242}, {80, 38}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "clear_button_touch_up_inside",
+          "frame" : "{{264, 268}, {80, 32}}",
+          "title" : "Clear",
+          "uuid" : "EAE8703C-E6B0-4190-BCDE-B91022F1F997",
+          "class" : "Button",
+          "name" : "clear_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{459, 73}, {123, 68}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "label2",
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "C911D48D-45A5-4901-848E-1E1F6ABF5C60",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Approximate Average:",
+          "number_of_lines" : 2,
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{453, 162}, {129, 72}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 30,
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "C911D48D-45A5-4901-848E-1E1F6ABF5C60",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "average_label",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{107, 22}, {201, 84}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "wrong_label",
+          "frame" : "{{229, 268}, {150, 32}}",
+          "uuid" : "47A42139-C095-4171-A4C8-5A17B8683032",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Type your mark level below based on the following categories",
+          "number_of_lines" : 4,
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
