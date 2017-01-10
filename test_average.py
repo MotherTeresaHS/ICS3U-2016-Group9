@@ -2,6 +2,8 @@
 
 import ui
 import speech 
+menu_view = ui.load_view("main_menu_scene.pyui")
+test_view = ui.load_view("test_average.pyui")
 
 def calculate_button_touch_up_inside(sender):
   knowledge = str(view['knowledge_textfield'].text)
@@ -148,6 +150,9 @@ def clear_button_touch_up_inside(sender):
   view['thinking_textfield'].text = ""
   view['application_textfield'].text = ""
   view['average_label'].text = ""
-  
+
+def back_touch_up_inside(sender):
+	menu_view.present("fullscreen")
+	
 view = ui.load_view()
-view.present('fullscreen')
+view.present('fullscreen')	   	  	   
