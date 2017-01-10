@@ -12,15 +12,15 @@
 
         ],
         "attributes" : {
-          "name" : "credits_label_name",
+          "font_name" : "SinhalaSangamMN-Bold",
           "frame" : "{{195, 254}, {150, 32}}",
           "uuid" : "0B3606C5-F903-402C-AC97-93A080A2D9B3",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Margie Venes   Mr. Patrick Coxall",
           "number_of_lines" : 4,
-          "font_size" : 30,
-          "font_name" : "SinhalaSangamMN-Bold"
+          "name" : "credits_label_name",
+          "font_size" : 30
         }
       },
       {
@@ -31,30 +31,31 @@
 
         ],
         "attributes" : {
-          "font_size" : 50,
+          "font_name" : "AvenirNextCondensed-Bold",
           "frame" : "{{437, 368}, {150, 32}}",
           "uuid" : "36AC121C-E8BA-4F7D-A65A-F2BC11742F02",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Credits:",
-          "name" : "credits_label",
-          "font_name" : "AvenirNextCondensed-Bold"
+          "font_size" : 50,
+          "name" : "credits_label"
         }
       },
       {
-        "selected" : false,
-        "frame" : "{{38, 29}, {77, 84}}",
+        "selected" : true,
+        "frame" : "{{31, 21}, {129, 54}}",
         "class" : "Button",
         "nodes" : [
 
         ],
         "attributes" : {
-          "font_size" : 60,
+          "action" : "back_touch_up_inside",
           "frame" : "{{472, 368}, {80, 32}}",
-          "title" : " ⬅️",
+          "title" : "< Go Back",
+          "uuid" : "331030E5-1644-4322-BC09-FE7C32D56C77",
           "class" : "Button",
           "name" : "back_button",
-          "uuid" : "331030E5-1644-4322-BC09-FE7C32D56C77"
+          "font_size" : 20
         }
       }
     ],
