@@ -1,0 +1,101 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {1024, 768}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{362, 98}, {244, 109}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "D176CE63-4633-4352-8AB6-A1DB3D2A3908",
+          "corner_radius" : 1,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{261, 244}, {150, 32}}",
+          "number_of_lines" : 2,
+          "border_width" : 1,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "alignment" : "center",
+          "text" : "Levels Calculator",
+          "font_name" : "AvenirNextCondensed-Heavy",
+          "class" : "Label",
+          "name" : "levels_label",
+          "font_size" : 30
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{362, 440}, {244, 83}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "D176CE63-4633-4352-8AB6-A1DB3D2A3908",
+          "corner_radius" : 1,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{261, 244}, {150, 32}}",
+          "number_of_lines" : 2,
+          "border_width" : 1,
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "alignment" : "center",
+          "text" : "Credits ",
+          "font_name" : "SourceCodePro-Medium",
+          "class" : "Label",
+          "name" : "credits_label",
+          "font_size" : 30
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{408, 215}, {141, 107}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "test_touch_up",
+          "frame" : "{{296, 244}, {80, 32}}",
+          "title" : ">",
+          "uuid" : "B67AEF5D-DF37-4988-B11A-A8E91A8540B5",
+          "class" : "Button",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "corner_radius" : 1,
+          "name" : "levels_button",
+          "font_size" : 70
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{408, 531}, {141, 107}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "credits_touch_up",
+          "frame" : "{{296, 244}, {80, 32}}",
+          "title" : ">",
+          "uuid" : "B67AEF5D-DF37-4988-B11A-A8E91A8540B5",
+          "class" : "Button",
+          "corner_radius" : 1,
+          "name" : "credits_button",
+          "font_size" : 70
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
