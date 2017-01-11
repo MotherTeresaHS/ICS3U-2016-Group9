@@ -1,9 +1,8 @@
 # coding: utf-8
 
 import ui
+#import console 
 import speech 
-menu_view = ui.load_view("main_menu_scene.pyui")
-test_view = ui.load_view("test_average.pyui")
 
 def calculate_button_touch_up_inside(sender):
   knowledge = str(view['knowledge_textfield'].text)
@@ -142,7 +141,7 @@ def calculate_button_touch_up_inside(sender):
   communication_average = (communication*0.10)
   application_average = (application*0.15) 	
   total = (knowledge_average + thinking_average + communication_average + application_average)/0.7
-  view['average_label'].text = format(total)
+  view['average_label'].text = format(str(round(total,1)))
   
 def clear_button_touch_up_inside(sender):
   view['knowledge_textfield'].text = ""
@@ -151,8 +150,6 @@ def clear_button_touch_up_inside(sender):
   view['application_textfield'].text = ""
   view['average_label'].text = ""
 
-def back_touch_up_inside(sender):
-	menu_view.present("fullscreen")
-	
 view = ui.load_view()
 view.present('fullscreen')	   	  	   
+	   	  
